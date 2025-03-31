@@ -1,0 +1,16 @@
+body{
+background-color:#670c9c;
+}
+img{
+position:relative;
+top:170px;
+left:500px;
+box-shadow:2px 4px 6px hotpink;
+border-radius:20px;
+}
+img:hover{
+width:560px;
+height:400px;
+box-shadow:3px 5px 10px hotpink;
+border: 2px solid hotpink;
+}
