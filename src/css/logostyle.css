@@ -1,16 +1,36 @@
-body{
-background-color:#670c9c;
+.logo-background {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-img{
-position:relative;
-top:170px;
-left:500px;
-box-shadow:2px 4px 6px hotpink;
-border-radius:20px;
+
+.logo-animation {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
-img:hover{
-width:560px;
-height:400px;
-box-shadow:3px 5px 10px hotpink;
-border: 2px solid hotpink;
+
+.logo-animation:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-animation {
+    animation: fadeIn 1s ease-out;
 }
