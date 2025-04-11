@@ -33,4 +33,6 @@
 
 .logo-animation {
     animation: fadeIn 1s ease-out;
+    height: 300px;
+    width: 551px;
 }
