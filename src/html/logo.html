@@ -6,11 +6,21 @@
 <script>
     setTimeout(function() {
         window.location.href = 'homescreen.html';
-    }, 2000); // Redirects after 2 seconds
+    }, 4000); // Redirects after 2 seconds
 </script>
 </head>
 <body class="logo-background" href="../css/logostyle.css">
+    <div class="video-container">
+        <video id="background-video" autoplay loop muted playsinline>
+            <!-- In a real implementation, you would use your own video file -->
+            <!-- For this demo, we're using a placeholder image that simulates a video -->
+            <source src="../assests/intro2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="overlay"></div>
+    
 <img src="../assests/saranaya-logo.png" alt="Saranya Logo" class="logo-animation">
+
 </body>
 </html>
 
